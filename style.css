@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #272727;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(0,0 ,0 ,5 );
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    position: fixed;
+    z-index: 99;
+}
+header .logo{
+    width: 60%;
+}
+header .logo img{
+    width: 90px;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s ease;
+    
+}
+header .menu ul li a:hover{
+    color: blue;
+}
+
+/*===== . Main . Home . =====*/
+
+#home .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/mouram4.jpg);
+    background-size: cover;
+}
+#home .container .icons{
+    width: 10%;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 999;
+}
+#home .container .icons ion-icon{
+    padding: 30px 0;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.5 ease;
+}
+#home .container .icons ion-icon:hover{
+    color: #156fc3
+}
+#home .container .title{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 60px;
+}
+#home .container .title h1{
+    color: #fff;
+    text-transform:uppercase;
+    font-size: 7rem;
+    letter-spacing: 5px;
+}
+#home .container .title h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+#home .container .title h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    letter-spacing: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+/*===== . About . =====*/
+
+#about .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/mouram4.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content:space-between;
+
+}
+#about .container .title{
+    width:90%;
+    height: 100vh;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+}
+#about .container .title h1{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+}
+#about .container .title p{
+    color: #fff;
+    width: 500px;
+    margin-top: 30px;
+}
+#about .container .title h2{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    padding: 8px;
+}
+
+#Hobbie{
+    margin-top: 2rem;
+}
+#about .container .title h3{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: left;
+    padding: 8px;
+}
+#about .container .title p{
+    color: #fff;
+    width: 500px;
+    margin-top: 20px;
+}
+#about .container .box-title{
+    width: 420px;
+    height: 37vh;
+    margin-top: 20px;
+    padding:0 10px;
+    box-shadow: 0 0 10px 0 rgb(214, 114, 31);
+    border-radius: 20px;
+}
+#about .container .box-title .b1{
+    width: 400px;
+    height: 8px;
+    background: #fff;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+#about .container .box-title .b2{
+    width: 355px;
+    height: 8px;
+    background:#884E0F;
+    border-radius: 5px;
+}
+#about .container .box-title .b3{
+    width: 290px;
+    height: 8px;
+    background:#884E0F;
+    border-radius: 5px;
+}
+#about .container .box-title .b4{
+    width: 322px;
+    height: 8px;
+    background:#884E0F;
+    border-radius: 5px;
+}
+#about .container .box-title .b5{
+    width:257px;
+    height: 8px;
+    background:#884E0F;
+    border-radius: 5px;
+}
+
+/*===== . portfolio . =====*/
+#port .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/mouram4.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#port .container input[type=radio]{
+    display: none;
+}
+#port .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    margin: 150px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    box-shadow: 0 0 10px 0 rgb(167, 92, 31);
+    transition: 0.4s;
+    cursor: pointer;
+}
+#port .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#port .container .card h1{
+    position: absolute;
+    z-index: 9;
+    color:#fff;
+    font-size: 6rem;
+    margin-top: 60px;
+}
+#port .container .card p{
+    position: absolute;
+    z-index: 9;
+    width: 300px;
+    color: #fff;
+    margin-top: 200px;
+    margin-right: 35px;
+    text-align: justify;
+}
+#port .container .card button{
+    position:absolute;
+    z-index: 9;
+    margin-top: 500px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: rgba(187, 88, 21, 0.671);
+    text-transform: uppercase;
+    cursor:pointer;
+}
+#port .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+#item-1:checked~ .cards #song-3,
+#item-2:checked~ .cards #song-1,
+#item-3:checked~ .cards #song-2{
+    transform:translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked~ .cards #song-2,
+#item-2:checked~ .cards #song-3,
+#item-3:checked~ .cards #song-1{
+    transform:translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked~ .cards #song-1,
+#item-2:checked~ .cards #song-2,
+#item-3:checked~ .cards #song-3{
+    transform:translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+/*===== . Contact . =====*/
+#contact .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/mouram4.jpg);
+    background-size: cover;
+}
+#contact .container .content-contact{
+    width:80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#contact .content-contact .contact-left{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    color:#fff
+}
+#contact .content-contact .contact-left h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .linha{
+    width: 350px;
+    height: 3px;
+    background: #fff;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#contact .content-contact .contact-left ion-icon{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+#contact .content-contact .contact-left span{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+#contact .content-contact .contact-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+#contact .content-contact .contact-right h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .contact-right input[type=email],
+#contact .content-contact .contact-right input[type=text]{
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline:none;
+}
+#contact .content-contact .contact-right textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border:none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+}
+/*===== . Footer . =====*/
+footer{
+    width: 100%;
+    height: 80px;
+    color:#fff;
+    line-height: 80px;
+    text-align: center;
+    background: rgba(0,0 ,0 );
+    position: relative;
+    top: -80px;
+}
+/*===== . Responsive . =====*/
+
+@media screen and(max-width:1280px){
+    #home .container .icons ion-icon{
+        font-size: 1.5rem;
+    }
+    #port .container .card h1{
+        font-size: 5rem;
+    }
+    #port .container .card p{
+        width: 280px;
+        font-size: 0.8rem;
+    }
+}
+@media screen and(max-width:960px){
+    body{
+        background: url(image/mouram4.jpg);
+    }
+    header{
+        background: none;
+    }
+    header .logo{
+        width:600px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+    }
+    header .btn-mobile ion-icon{
+        color:#fff;
+        font-size: 1.5rem;
+    }
+    
+    header .menu-mobile{
+        display: none;
+        width: 50%;
+        height: 20vh;
+        box-shadow: 0 0 15px 0 rgb(163, 94, 29);
+        position: fixed;
+        top: 20px;
+        border-radius: 10px;
+        background: #884E0F;
+    }
+    header .menu-mobile ul{
+        text-align: center;
+    }
+    header .menu-mobile ul li{
+        list-style: none;
+        padding: 12px 0;
+    }
+    header .menu-mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+
+
+
+
